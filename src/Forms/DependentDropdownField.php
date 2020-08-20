@@ -148,11 +148,7 @@ class DependentDropdownField extends DropdownField
             }
         }
 
-        if ($this->getHasEmptyDefault()) {
-            return ['' => $this->getEmptyString()] + (array) $source;
-        } else {
-            return $source;
-        }
+        return $source;
     }
     
      /**
